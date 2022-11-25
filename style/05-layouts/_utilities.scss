@@ -1,0 +1,18 @@
+$max-width: 69.375rem;
+$min-width: 20.4rem;
+$padding: 1.5rem;
+
+.container {
+  margin-inline: auto;
+  max-width: min($max-width, 100% - (2 * $padding));
+  min-width: $min-width;
+}
+
+.flex-group {
+  display: flex;
+  align-items: center;
+}
+
+.flex-group--col {
+  flex-direction: column;
+}

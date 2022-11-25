@@ -1,0 +1,45 @@
+.rating {
+  background-color: $clr-neutral-300;
+  border-radius: 0.5rem;
+  flex-direction: column;
+  gap: 0.75rem;
+  justify-content: center;
+  padding: 1rem 2rem;
+  transform: translateX(0);
+  transition: transform 0.2s ease-in;
+  width: 100%;
+
+  @include breakpoint(700) {
+    align-items: flex-start;
+    justify-content: start;
+    text-align: left;
+    transform: translateX(calc(var(--i) * (-1rem)));
+    transition: transform 0.6s ease-out;
+    width: 18.75rem;
+  }
+
+  @include breakpoint(950) {
+    flex-direction: row;
+    transform: translateX(calc(var(--i) * (-2.5rem)));
+    transition: transform 0.6s ease-out;
+    gap: 1.5rem;
+    width: 30rem;
+    padding: 1.2rem 2.5rem;
+  }
+
+  &__stars {
+    gap: 0.5rem;
+  }
+
+  &__description {
+    color: $clr-primary-400;
+    font-weight: $fw-700;
+    font-size: $fs-400;
+    line-height: 1;
+    text-align: center;
+
+    @include breakpoint(1100) {
+      font-size: $fs-500;
+    }
+  }
+}

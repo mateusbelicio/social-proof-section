@@ -1,0 +1,62 @@
+/* LAYOUTS BLOCKS */
+/* Configuration of components on the page: define how the components will be showed on the page */
+
+/* SOCIAL */
+.social {
+  background-image: url('../../images/bg-pattern-top-mobile.svg'),
+    url('../../images/bg-pattern-bottom-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  background-size: contain;
+
+  display: grid;
+  gap: 5rem;
+  min-height: 100vh;
+  place-content: center;
+
+  @include breakpoint(450) {
+    background-image: url('../../images/bg-pattern-top-mobile.svg'),
+      url('../../images/bg-pattern-bottom-desktop.svg');
+  }
+
+  @include breakpoint(620) {
+    background-image: url('../../images/bg-pattern-top-desktop.svg'),
+      url('../../images/bg-pattern-bottom-desktop.svg');
+    background-size: 80vmin, 150vmin;
+  }
+
+  &__container {
+    align-items: center;
+    display: grid;
+    padding-block: 4rem;
+    row-gap: 3rem;
+
+    @include breakpoint(620) {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2rem;
+    }
+
+    @include breakpoint(900) {
+      grid-template-columns: 1fr 1.5fr;
+      column-gap: 2rem;
+    }
+  }
+
+  &__rating {
+    gap: 1rem;
+
+    @include breakpoint(700) {
+      justify-self: end;
+    }
+  }
+
+  &__testimonials {
+    flex-direction: column;
+    gap: 1rem;
+    grid-column: 1 / -1;
+
+    @include breakpoint(900) {
+      flex-direction: row;
+    }
+  }
+}
