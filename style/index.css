@@ -237,7 +237,7 @@ cite {
 /* Configuration of components on the page: define how the components will be showed on the page */
 /* SOCIAL */
 .social {
-  background-image: url("../../images/bg-pattern-top-mobile.svg"), url("../../images/bg-pattern-bottom-mobile.svg");
+  background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
   background-repeat: no-repeat;
   background-position: top left, bottom right;
   background-size: contain;
@@ -248,12 +248,12 @@ cite {
 }
 @media screen and (min-width: 28.125em) {
   .social {
-    background-image: url("../../images/bg-pattern-top-mobile.svg"), url("../../images/bg-pattern-bottom-desktop.svg");
+    background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-desktop.svg");
   }
 }
 @media screen and (min-width: 38.75em) {
   .social {
-    background-image: url("../../images/bg-pattern-top-desktop.svg"), url("../../images/bg-pattern-bottom-desktop.svg");
+    background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
     background-size: 80vmin, 150vmin;
   }
 }
