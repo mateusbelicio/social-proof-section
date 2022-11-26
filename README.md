@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- 🔗 [Solution URL](https://github.com/mateusbelicio/[repo-name])
-- 🔗 [Live Site URL](https://mateusbelicio.github.io/[repo-name])
+- 🔗 [Solution URL](https://github.com/mateusbelicio/social-proof-section)
+- 🔗 [Live Site URL](https://mateusbelicio.github.io/social-proof-section)
 
 ## My process
 
